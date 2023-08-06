@@ -9,6 +9,16 @@
     justify-content: space-between;
     height: 44px;
     line-height: 1;
+    &.inp-error {
+        &:not(:hover) {
+            input:not(:checked)+input:not(:checked)+input:not(:checked)+input:not(:checked)+input:not(:checked) {
+                &~.frm-rate {
+                    background-image: url(../img/icons/rate-error.svg) !important;
+                    filter: none !important;
+                }
+            }
+        }
+    }
     &:hover {
         .frm-rate {
             background-image: url(../img/icons/rate.svg) !important;

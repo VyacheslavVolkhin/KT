@@ -86,6 +86,9 @@
     break-inside: avoid-column;
     display: block;
     animation: fadein ease 0.2s;
+    &.js-tab-block:not(.active) {
+        display: none;
+    }
     &.wrap-more {
         &~.item-wrap {
             display: none;

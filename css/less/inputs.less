@@ -16,7 +16,12 @@
         border-color: var(--clr-att);
     }
     &.inp-error {
-        
+        border-color: #960F19;
+        background-image: url(../img/icons/error.svg);
+        background-size: 24px auto;
+        background-repeat: no-repeat;
+        background-position: right 14px center;
+        padding-right: 40px;
     }
     &.inp-att {
         border-color: #EF7700;
@@ -36,6 +41,10 @@ textarea.form-input {
     height: 120px;
     padding-top: 15px;
     line-height: 1.5;
+    &.inp-error {
+        padding-right: 40px;
+        background-position: right 14px top 13px;
+    }
 }
 select.form-input {
     display: block;
@@ -544,6 +553,12 @@ select.form-input:required:invalid {
             padding: 0 21px;
             font-size: 15px;
             border-radius: 23px;
+        }
+        &.button-tag-large.button-border {
+            height: 6rem;
+            padding: 0 2.6rem;
+            border-radius: 1rem;
+            font-size: 1.9rem;
         }
     }
     .btn-action-ico {

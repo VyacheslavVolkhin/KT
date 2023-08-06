@@ -72,6 +72,11 @@ a.link-main, .link-main {
     &:hover {
     }
 }
+.link-text {
+    &:not(:hover) {
+        color: inherit;
+    }
+}
 .link-phone {
     white-space: nowrap;
 }
@@ -112,6 +117,10 @@ h6, .h6-title {
 }
 .text-light, .title-light {
     color: var(--clr-light);
+}
+.text-small {
+    font-size: 17px;
+    line-height: 1.5;
 }
 .text-center, .title-center {
     text-align: center;
@@ -156,6 +165,10 @@ table {
     .h2-title.title-mlarge, h2.title-mlarge {
         font-size: 30px;
         line-height: 1.1;
+    }
+    .h2-title.title-msmall, h2.title-msmall {
+        font-size: 1em;
+        line-height: inherit;
     }
 }
 @media (max-width: 767px) {

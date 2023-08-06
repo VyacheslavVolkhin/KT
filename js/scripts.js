@@ -437,4 +437,24 @@ $(window).on('load', function () {
 			scrollTop: 1
 		}, 1);
 	}
+
+
+	//gallery-box
+	if (!!$('.gallery-box').offset()) {
+		if ($(window).innerWidth() > 1023) {
+			$('.gallery-box .slider').slick({
+				dots: false,
+				slidesToShow: 2,
+				variableWidth: true,
+				infinite: false,
+				adaptiveHeight: false,
+				rows: 1,
+				swipeToSlide: true,
+				prevArrow: '<span class="btn-action-ico ico-arrow ico-arrow-prev"></span>',
+				nextArrow: '<span class="btn-action-ico ico-arrow ico-arrow-next"></span>',
+			});
+		}
+	}
+	
+	
 });
