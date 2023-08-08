@@ -4001,7 +4001,27 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 30px -10px 30px 0;
+  margin: 30px 0 30px 0;
+}
+.tags-box .items-wrap {
+  margin: 0 -10px 0 0;
+}
+.tags-box .item-wrap {
+  margin: 0 10px 10px 0;
+  width: auto;
+  line-height: 1;
+}
+.tags-box .item-wrap .btn {
+  margin: 0;
+}
+.tags-box .item-wrap.wrap-hidden {
+  display: none;
+}
+.tags-box .item-wrap.wrap-hidden.wrap-hidden-show {
+  display: block;
+}
+.tags-box .item-wrap.wrap-action {
+  display: block;
 }
 .tags-box:last-child {
   margin-bottom: 0;
@@ -7733,6 +7753,23 @@ select.form-input:required:invalid {
   border-color: var(--clr-att-light) !important;
   color: var(--clr-light-text) !important;
   pointer-events: none;
+}
+.btn.button-tgl:before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  margin: 0 auto;
+  background: url(../img/icons/arrow-slider.svg) center no-repeat;
+  background-size: 100% auto;
+  transform: rotate(90deg);
+}
+.btn.button-tgl:hover:before {
+  filter: brightness(0) invert(1);
+}
+.btn.button-tgl.active:before {
+  transform: rotate(-90deg);
 }
 .btn-action-ico {
   min-width: 0;
