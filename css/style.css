@@ -8920,4 +8920,17 @@ select.form-input:required:invalid {
   z-index: 3;
   pointer-events: none;
 }
+@media (max-width: 1599px) {
+  .photos-slider-box .slider-wrap .item-tile-video {
+    height: 465px;
+  }
+}
+@media (max-width: 1023px) {
+  .photos-slider-box .slider-wrap .item-tile-video {
+    height: auto;
+  }
+  .photos-slider-box .slider-wrap .item-tile-video:before {
+    padding-bottom: 100%;
+  }
+}
 /*end card video*/
