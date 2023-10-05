@@ -8898,11 +8898,21 @@ select.form-input:required:invalid {
   }
 }
 /*new main header*/
-.wrap-main .header .inner-wrap {
+.header .inner-wrap {
   max-width: var(--max);
 }
 /*end new main header*/
-/*card video*/
+/*card */
+.card-box .card-select-top-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -10px 0 0;
+  padding-top: 15px;
+}
+.card-box .card-select-top-wrap .btn {
+  margin: 0 10px 10px 0;
+  height: 30px;
+}
 .photos-slider-box .item-tile-video {
   height: 800px;
 }
@@ -8933,4 +8943,4 @@ select.form-input:required:invalid {
     padding-bottom: 100%;
   }
 }
-/*end card video*/
+/*end card */
