@@ -283,16 +283,63 @@
         }
     }
 }
-/*new main header*/
-.wrap-main {
+/*items*/
+.item-tile-faq .popup-content-block.width-max {
+    padding-right: 0;
+    width: calc(100vw - var(--paddingContainer)*2);
+    max-width: 1600px;
 }
+.item-tile-type {
+    display: block;
+    position: relative;
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--clr-base);
+    padding-top: 2rem;
+    .tile-photo-wrap {
+        margin-bottom: 20px;
+    }
+    .tile-info-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -20px 0 0;
+        padding-left: 20px;
+    }
+    .tile-info-inner {
+        display: flex;
+        flex-shrink: 0;
+        max-width: 100%;
+        margin: 0 20px 10px 0;
+    }
+    .tile-info-title {
+        margin: 0 10px 0 0;
+        color: #696969;
+    }
+    .tile-photo {
+        border-radius: 20px;
+        border: 1px solid var(--clr-border);
+    }
+}
+/*end items*/
+/*new main header*/
 .header {
     .inner-wrap {
         max-width: var(--max);
     }
 }
 /*end new main header*/
-/*card */
+/*other */
+.types-info-box {
+    margin-bottom: 20px;
+    .items-wrap {
+        margin: 0 -10px -30px -10px;
+    }
+    .item-wrap {
+        width: 33.33%;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+}
 .card-box {
     .card-select-top-wrap {
         display: flex;
@@ -337,4 +384,4 @@
         }
     }
 }
-/*end card */
+/*end other */
