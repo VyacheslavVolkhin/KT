@@ -8897,6 +8897,7 @@ select.form-input:required:invalid {
     margin-left: -3rem;
   }
 }
+/*new styles*/
 /*items*/
 .item-tile-faq .popup-content-block.width-max {
   padding-right: 0;
@@ -8997,4 +8998,11 @@ select.form-input:required:invalid {
     padding-bottom: 100%;
   }
 }
+@media (min-width: 1024px) {
+  .header .menu-wrap .menu {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
 /*end other */
+/*end new styles*/
