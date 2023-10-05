@@ -390,11 +390,25 @@
     .wrap {
         padding-top: 100px;
     }
+    .header-fixed {
+        .header {
+            box-shadow: 0 0 10px fade(#000, 30);
+            .inner-wrap {
+                min-height: 60px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+        }
+    }
     .header {
         position: fixed;
+        transition: all ease 0.2s;
         top: 0;
         left: 0;
         right: 0;
+        .inner-wrap {
+            transition: all ease 0.2s;
+        }
     }
     .header .menu-wrap .menu {
         justify-content: center;

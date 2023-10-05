@@ -483,6 +483,18 @@ $(window).on('load', function () {
 		$(this).parents('.item-tile-video').append('<iframe width="100%" height="100%" src="' + videoURL + '" frameborder="0" allowfullscreen></iframe>')
 		return false;
 	})
+
+
+	if (!!$('.header').offset()) {
+		$(window).scroll(function () {
+			var windowTop = $(window).scrollTop();
+			if (windowTop > 0) {
+				$('.wrap').addClass('header-fixed');
+			} else {
+				$('.wrap').removeClass('header-fixed');
+			}
+		});
+	}
 	
 	
 });
