@@ -8969,6 +8969,26 @@ select.form-input:required:invalid {
   height: 30px;
   width: auto;
 }
+.card-box .ext-inner-wrap .item-wrap:nth-child(3) ~ .item-wrap {
+  display: none;
+}
+.card-box .ext-inner-wrap .item-wrap:nth-child(3) ~ .wrap-more {
+  display: block;
+}
+.card-box .ext-inner-wrap .wrap-more {
+  display: none;
+}
+.card-box .ext-inner-wrap.show-all .item-wrap:nth-child(3) ~ .item-wrap,
+.card-box .ext-inner-wrap .show-all .item-wrap:nth-child(3) ~ .item-wrap {
+  display: block;
+}
+.card-box .ext-inner-wrap.show-all .btn-show-toggle:after,
+.card-box .ext-inner-wrap .show-all .btn-show-toggle:after {
+  content: attr(data-hide);
+}
+.card-box .ext-inner-wrap .btn-show-toggle:after {
+  content: attr(data-show);
+}
 .photos-slider-box .item-tile-video {
   height: 800px;
 }

@@ -352,6 +352,40 @@
             width: auto;
         }
     }
+    .ext-inner-wrap {
+        .item-wrap {
+            &:nth-child(3) {
+                &~.item-wrap {
+                    display: none;
+                }
+                &~.wrap-more {
+                    display: block;
+                }
+            }
+        }
+        .wrap-more {
+            display: none;
+        }
+        &.show-all, .show-all {
+            .item-wrap {
+                &:nth-child(3) {
+                    &~.item-wrap {
+                        display: block;
+                    }
+                }
+            }
+            .btn-show-toggle {
+                &:after {
+                    content: attr(data-hide)
+                }
+            }
+        }
+        .btn-show-toggle {
+            &:after {
+                content: attr(data-show)
+            }
+        }
+    }
 }
 .photos-slider-box {
     .item-tile-video {
